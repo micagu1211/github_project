@@ -8,8 +8,10 @@ def reverseWord(string_arg):
 # TEAM MEMBER:
 # implement this function so that it returns the frequency of query in string_arg
 def countFreq(string_arg, query):
-	pass
-
+     for i in string_arg:
+         ct = string_arg.count(query)
+     return ct            
+ 
 def main():
 	data = 'guidorossumwashere'
 	print 'REVERSED ==>', reverseWord(data)
