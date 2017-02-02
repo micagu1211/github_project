@@ -12,11 +12,17 @@ def countFreq(string_arg, query):
      for i in string_arg:
          ct = string_arg.count(query)
      return ct            
+
+def address(addr):
+    new = id(addr)
+    return new
+
  
 def main():
 	data = 'guidorossumwashere'
 	print 'REVERSED ==>', reverseWord(data)
 	print 'FREQUENCY OF s IN', data, '==>', countFreq(data, 's')
+        print 'ADDRESS OF guidorossumwashere is:', address(data)
 
 if __name__ == "__main__": 
 	main()
